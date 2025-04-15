@@ -14,13 +14,9 @@ on:
         type: choice
         options:
           - 'all_tests'
-          - 'smoke'
+          - 'api'
+          - 'smoky'
           - 'regression'
-          - 'login'
-          - 'LoginTest'
-          - 'LoginAPITest'
-          - 'TaskTests'
-         
 
 jobs:
   test:
