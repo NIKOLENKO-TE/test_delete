@@ -16,14 +16,12 @@ dependencies {
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.36'
 
     //implementation 'org.slf4j:slf4j-nop:2.0.7'//настройка логирования
-    implementation 'ch.qos.logback:logback-classic:1.5.16' // зависимость от Logback для логирования
+    implementation 'ch.qos.logback:logback-classic:+' // зависимость от Logback для логирования
 
    // testImplementation 'com.codeborne:selenide:7.0.4'
 
-
-
 // Фреймворк
-    implementation 'org.testng:testng:7.11.0'
+    implementation 'org.testng:testng:+'
 
 // Для работы с REST API
     implementation group: 'io.rest-assured', name: 'rest-assured', version: '5.5.1'
@@ -39,12 +37,12 @@ dependencies {
 
 
     // Selenium WebDriver (UI-тестування)
-    implementation 'org.seleniumhq.selenium:selenium-java:4.20.0'
+    implementation 'org.seleniumhq.selenium:selenium-java:+'
    // implementation 'org.seleniumhq.selenium:selenium-chrome-driver:4.20.0'  // для Chrome
     //implementation 'org.seleniumhq.selenium:selenium-firefox-driver:4.20.0' // для Firefox
 
 
-    implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '6.0.0'
+    implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '+'
 
 }
 

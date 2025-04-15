@@ -42,7 +42,7 @@ public class AplicationManager {
         }
 
         driver.get("https://clanhub-sd6ys.ondigitalocean.app/");
-        driver.manage().window().maximize();
+        //driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 //        pause (50);
 //        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10)); //ojudanie zagryzki stranicu
