@@ -65,9 +65,8 @@ jobs:
         run: ls -R
 
       - name: ▶️ 🐞 Run tests
-        run: xvfb-run --auto-servernum --server-args="-screen 0 1920x1080x24" gradle clean smoky build > build.log 2>&1 || true
-
-        if: github.event_name != 'workflow_dispatch'
+        run: xvfb-run --auto-servernum --server-args="-screen 0 1920x1080x24" gradle clean ${{ github.event.inputs.deployment_target != 'all_tests' && github.event.inputs.deployment_target || '' }} build > build.log 2>&1 || true
+        if: github.event_name == 'workflow_dispatch'
 
       - name: ✅ 📂 List Directories after tests
         if: always()
